@@ -1,0 +1,9 @@
+Factuur;     PK:Factuur_id, F_datum, Totaal_excl_BTW 6%Btw, 19%Btw, Totaal_incl_btw, FK:Klant_id ,FK:Product_id
+
+Klant;       PK:Klant_id, Klantnaam, Adres, Telefoonnummer, leeftijd, email
+
+Product;     PK:Product_id, Omschrijving, Prijs_per_stuk,
+
+Reservering; PK:Reservering_id, Reservering_begin_tijd, Reservering_eind_tijd, R_datum, FK:Tafel_id FK:Klant_id
+
+Tafel;       PK:Tafel_id, Max_aantal_personen
