@@ -25,7 +25,6 @@
     <form method="POST">
     <input type="text" name="Reservering_begin_tijd" placeholder="Naam">
     <input type="text" name="Reservering_eind_tijd" placeholder="Naam">
-    <input type="text" name="Klant_id" placeholder="Naam">
     <input type="submit"> 
     </form>
 </body>
