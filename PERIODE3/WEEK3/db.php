@@ -21,5 +21,5 @@ class DB {
     }   
 
 }
-$myDb = new DB('dbName');
+$myDb = new DB('les2');
 ?>
