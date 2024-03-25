@@ -24,5 +24,10 @@ class Reservering {
         WHERE Reservering_id = ?");
         $stmt->execute([$Reservering_begin_tijd, $Reservering_eind_tijd, $Klant_id, $Reservering_id]);
     }
+
+    public function deleteReservering(int $Reservering_id) {
+        $stmt = $this->pdo->prepare("DELETE from reservering WHERE Reservering_id = ?");
+        $stmt->execute([$Reservering_id]);
+    }
 }
 ?>
