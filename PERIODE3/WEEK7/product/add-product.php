@@ -1,8 +1,8 @@
 <?php
     include "product.php";
-    include "../header.php";
+    include "../db/header.php";
 
-    $dbproduct = new Product($myDb);
+    $dbproduct = new Product(new DB());
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try{

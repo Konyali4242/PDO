@@ -3,7 +3,7 @@
 class DB {
     public $pdo;
     
-    public function __construct($db = "pdotoets", $host = "localhost:3306", $user = "root", $pass = "")
+    public function __construct($db = "pdotoets2", $host = "localhost:3306", $user = "root", $pass = "")
     {
         try {
             $this->pdo = new PDO("mysql:host=$host;dbname=$db;", $user, $pass);
@@ -12,12 +12,6 @@ class DB {
             die ("Connection error: " . $e->getMessage());
         }
     }
-
-    // function pdo($sql, $placeholders = NULL){
-    //     $stmt = $this->$dbh->prepare($sql);
-    //     $stmt->execute($placeholders);
-    //     return $stmt;
-    // }   
 
 }
 ?>

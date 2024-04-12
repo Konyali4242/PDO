@@ -1,6 +1,6 @@
 <?php
     include "reservering.php";
-    include "../header.php";
+    include "../db/header.php";
 
     
         try {

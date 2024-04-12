@@ -1,8 +1,8 @@
 <?php
     include "klant.php";
-    include "../header.php";
+    include "../db/header.php";
 
-    $dbklant = new Klant($myDb);
+    $dbklant = new Klant(new DB());
 ?>
 
 <!DOCTYPE html>

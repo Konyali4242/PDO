@@ -1,6 +1,6 @@
 <?php
     include "product.php";
-    include "../header.php";
+    include "../db/header.php";
 
     
         try {

@@ -1,6 +1,6 @@
 <?php
     include "klant.php";
-    include "../header.php";
+    include "../db/header.php";
 
     
         try {

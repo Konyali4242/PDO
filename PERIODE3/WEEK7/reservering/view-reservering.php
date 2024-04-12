@@ -1,8 +1,8 @@
 <?php
     include "reservering.php";
-    include "../header.php";
+    include "../db/header.php";
 
-    $dbreservering = new Reservering($myDb);
+    $dbreservering = new Reservering(new DB());
 ?>
 
 <!DOCTYPE html>

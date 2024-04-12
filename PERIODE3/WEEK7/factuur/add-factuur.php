@@ -1,8 +1,8 @@
-<?php
+    <?php
     include "factuur.php";
-    include "../header.php";
+    include "../db/header.php";
 
-    $dbfactuur = new Factuur($myDb);
+    $dbfactuur = new Factuur(new DB());
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try{

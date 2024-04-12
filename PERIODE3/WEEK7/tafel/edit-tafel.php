@@ -1,6 +1,6 @@
 <?php
     include "tafel.php";
-    include "../header.php";
+    include "../db/header.php";
 
     
         try {

@@ -1,8 +1,8 @@
 <?php
     include "factuur.php";
-    include "../header.php";
+    include "../db/header.php";
 
-    $dbfactuur = new Factuur($myDb);
+    $dbfactuur = new Factuur(new DB());
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +40,7 @@
             <td><?php echo $factuur['Totaal_excl_BTW']?></td>
             <td><?php echo $factuur['Totaal_incl_BTW']?></td>
             <td><?php echo $factuur['Prijs_totaal']?></td>
-            <td><?php echo $factuur['Aantal_producten']?></td>
+            <td><?php echo $factuur['aantal_producten']?></td>
             <td><?php echo $factuur['Tafel_id']?></td>
             <td><?php echo $factuur['Product_id']?></td>
             <td><a href="edit-factuur.php?Factuur_id=<?php echo $factuur['Factuur_id']; ?>">Edit</a></td>

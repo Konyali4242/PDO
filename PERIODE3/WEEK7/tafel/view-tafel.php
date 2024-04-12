@@ -1,8 +1,8 @@
 <?php
     include "tafel.php";
-    include "../header.php";
+    include "../db/header.php";
 
-    $dbtafel = new Tafel($myDb);
+    $dbtafel = new Tafel(new DB());
 ?>
 
 <!DOCTYPE html>
